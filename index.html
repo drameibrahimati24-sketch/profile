@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The portfolio of Drame Ibrahima — Computer Science student at Nusa Putra University, exploring AI engineering and intelligent systems."
+    />
+    <meta name="theme-color" content="#080b14" />
+    <title>Drame Ibrahima — AI Engineering Portfolio</title>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const theme = savedTheme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
